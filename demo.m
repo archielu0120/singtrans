@@ -23,7 +23,7 @@ function use(song_id, t_start, t_end)
     len = length(fea.vocal_pitch);
     pv.pitch = fea.vocal_pitch;
     pv.time = fea.time;
-
+    pv.flux = fea.spectral_flux
     gtnote = noteFileRead(sprintf(...
         './MIR-ST500/%d/%d_groundtruth.txt', song_id, song_id));
 %     note = noteSubsequence(note, timeInterval, 1);
